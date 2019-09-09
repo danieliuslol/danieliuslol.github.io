@@ -1,0 +1,31 @@
+h1  { 
+    border: 3px solid green;
+}
+    .redb  {
+        border: 3px solid darkblue;
+        color: white;
+        padding: 0.5em;
+        margin-top: 1em;
+}
+ .redb h1 {
+     border: 3px dashed black;
+     color: black;
+     padding: 0.5em;
+}
+li { 
+    border: 3px dotted red;
+    padding: 0.5em;
+    margin: 1em;
+}
+.inline li { 
+    display: inline;
+    border: 3px dashed yellow;
+}
+.inlineblock li{ 
+    display: inline-block;
+    border: 3px dashed yellow;
+}
+    body {
+    background-color:white;
+    
+}
