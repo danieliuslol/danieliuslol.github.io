@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+        max-width: 60em ; /* 960px - 1080px - fartölvuská */
+        margin: 1em auto;
+        background-color: gray;
+    }
+h1 ,h2 , h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    /* -- Grid area -- */
+    .haus {
+        grid-area:  haus;
+    }
+    .main {
+        grid-area: main;
+    }
+    .topnav {
+        grid-area: topnav;
+    }
+    .foot {
+        grid-area: foot;
+    }
+    /*-- dálkar í main --*/
+    .as1 {
+        grid-area: as1;
+        border-right: 1px solid violet;
+    }
+    .as2 {
+        grid-area: as2;
+        border-left: 1px solid violet;
+        padding-left: 1em;
+    }
+    .art1 {
+        grid-area: art1;
+    }
+    /*-- Template area --*/
+    .body {
+        display: grid ; /*grid virkar á barn enkki barnabarn */
+        grid-gap: 1em;
+        grid-template-areas:  
+        "topnav"
+        "haus"
+        "main"
+        "foot" 
+    }
+    .main{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-areas: 
+            "as1 art1 as2";
+        grid-template-columns: 3fr 3fr 1fr;
+        padding: 0 2em;
+    }
+    /*--flex box --*/
+    .topmenu, .footmenu{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-around;
+        margin: 0;
+        padding: 0;
+    }
+    .topmenu li, .footmenu li{
+        list-style-type: none;
+    }
+    /*vinnugögn */
+    
